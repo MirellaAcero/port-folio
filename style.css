@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+[class^=col-], [class*=" col-"] {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  color: #D0D6F9;
+  font-weight: 100;
+}
+
+h1, h2, h3 {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+}
+
+.ham {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ham span {
+  background-color: #FFFFFF;
+  display: block;
+  height: 1px;
+  width: 28px;
+  margin: 9px auto;
+  border-radius: 2px;
+}
+
+.enlaces-menu {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.18);
+  height: 65px;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.enlaces-menu li {
+  margin: 0 18px;
+  list-style-type: none;
+  transition: 0.3s;
+  height: 65px;
+  line-height: 4;
+}
+
+.enlaces-menu li:hover {
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.enlaces-menu li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header {
+  background-image: url(images/background/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  height: 100vh;
+}
+header .logo {
+  text-align: center;
+  padding-top: 5px;
+}
+header .logo img {
+  width: 40%;
+}
+header .pulse {
+  text-align: center;
+  margin-top: 50px;
+}
+header .pulse button {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: none;
+}
+header .pulse button:hover {
+  animation: pulseAnimate 1s infinite;
+}
+header .pulse a {
+  color: #0B0D17;
+  text-decoration: none;
+  font-size: 22px;
+}
+header .container {
+  padding-top: 140px;
+}
+header .container h1 {
+  font-size: 144px;
+}
+header .container h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+section.about {
+  background-image: url(images/background/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+section.about .about-me .title {
+  margin-left: -12px;
+}
+section.about .about-me .title h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 28px;
+}
+section.about .about-me .title h3 span {
+  font-weight: 500;
+  margin-right: 8px;
+}
+section.about .about-me .text {
+  position: relative;
+  top: 95px;
+}
+section.about .about-me .text span {
+  letter-spacing: -1px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+section.about .about-me .text h2 {
+  font-size: 65px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+section.about .about-me .profile {
+  text-align: center;
+}
+section.about .about-me .profile img {
+  width: 45%;
+  border-radius: 40%;
+  filter: grayscale(0.4);
+}
+section.about .about-me .skill {
+  margin-top: 135px;
+}
+section.about .about-me .skill .subtitle {
+  text-align: center;
+  margin-bottom: 85px;
+}
+section.about .about-me .skill .tool {
+  padding: 0 100px;
+  text-align: center;
+}
+section.about .about-me .skill .tool .container-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+section.about .about-me .skill .tool .container-box .box-icon {
+  width: 100%;
+  margin: auto;
+}
+section.about .about-me .skill .tool .container-box .box-icon img {
+  width: 70px;
+}
+
+section.work {
+  background-image: url(images/background/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+section.work .my-works .title {
+  margin-left: -12px;
+  padding-bottom: 50px;
+}
+section.work .my-works .title h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 28px;
+}
+section.work .my-works .title h3 span {
+  font-weight: 500;
+  margin-right: 8px;
+}
+section.work .my-works .work-img {
+  filter: grayscale(0.4);
+  cursor: pointer;
+}
+section.work .my-works .work-img img {
+  width: 100%;
+}
+section.work .my-works .work-img:hover {
+  filter: grayscale(0);
+}
+section.work .my-works .work-text {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+section.work .my-works .work-text h3 {
+  font-size: 65px;
+}
+section.work .my-works .work-text p {
+  padding-bottom: 25px;
+}
+section.work .my-works .work-text .menu-work ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+section.work .my-works .work-text .menu-work ul li {
+  margin: 0 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section.work .my-works .work-text .menu-work ul li:hover {
+  font-weight: 400;
+  border-bottom: 1.7px solid #FFFFFF;
+}
+section.work .my-works .work-text .img-sunny {
+  display: block;
+}
+section.work .my-works .work-text .text-sunny {
+  display: block;
+}
+section.work .my-works .work-text .text-senati {
+  display: none;
+}
+section.work .my-works .work-text .text-loopstudio {
+  display: none;
+}
+section.work .my-works .work-text .text-fylo {
+  display: none;
+}
+section.work .my-works .work-text .text-crowdfund {
+  display: none;
+}
+section.work .my-works .work-text .text-blogr {
+  display: none;
+}
+section.work .my-works .work-text .bttn {
+  display: flex;
+  padding: 40px;
+  border-top: 0.5px solid #FFFFFF;
+  justify-content: space-around;
+}
+section.work .my-works .work-text .bttn .tools ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+section.work .my-works .work-text .bttn .tools ul li {
+  width: 25px;
+  height: 30px;
+  margin: 0 3px;
+}
+section.work .my-works .work-text .bttn .tools ul li img {
+  width: 100%;
+}
+section.work .my-works .work-text .bttn .code {
+  height: 100%;
+  transition: 0.3s;
+}
+section.work .my-works .work-text .bttn .code a {
+  color: #D0D6F9;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 500;
+}
+section.work .my-works .work-text .bttn .code:hover {
+  border-bottom: 2px solid #D0D6F9;
+}
+
+footer.footer {
+  background-color: rgba(12, 14, 23, 0.8588235294);
+  padding: 15px 0;
+}
+footer.footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+footer.footer .logo {
+  text-align: center;
+}
+footer.footer .logo img {
+  width: 15%;
+}
+footer.footer .menu-footer ul {
+  justify-content: space-between;
+}
+footer.footer .menu-footer ul li {
+  line-height: 2;
+  transition: 0.3s;
+}
+footer.footer .menu-footer ul li a {
+  color: #D0D6F9;
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+footer.footer .menu-footer ul li:hover {
+  border-bottom: 3px solid #D0D6F9;
+}
+footer.footer .social li {
+  padding: 0 10px;
+}
+
+@keyframes pulseAnimate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.18);
+  }
+  70% {
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    background-image: url(images/background/background-home-tablet.jpg);
+    height: 100%;
+  }
+  header .logo {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 15px;
+  }
+  header .enlaces-menu {
+    padding: 0 20px;
+  }
+  header .enlaces-menu li {
+    margin: 0 12px;
+  }
+  header .container {
+    text-align: center;
+    padding-top: 100px;
+  }
+  header .container h1 {
+    font-size: 90px;
+  }
+  header .text {
+    padding: 30px 0;
+  }
+  header .pulse {
+    margin-top: 0;
+    padding: 36px 0 60px;
+  }
+  section.about {
+    background-image: url(images/background/background-crew-tablet.jpg);
+    padding: 70px 0;
+  }
+  section.about .about-me .text {
+    top: 50px;
+    text-align: center;
+  }
+  section.about .about-me .profile {
+    padding: 75px 0;
+  }
+  section.about .about-me .profile img {
+    width: 35%;
+  }
+  section.about .about-me .skill .subtitle {
+    margin-bottom: 55px;
+  }
+  section.about .about-me .skill .tool {
+    padding: 0 25px;
+  }
+  section.about .about-me .skill .tool .container-box .box-icon {
+    width: 100%;
+  }
+  section.about .about-me .skill .tool .container-box .box-icon img {
+    width: 60px;
+  }
+  section.work {
+    padding: 0;
+    padding-top: 70px;
+  }
+  section.work .my-works .work-text {
+    text-align: center;
+    padding-left: 0;
+  }
+  section.work .my-works .work-text .menu-work {
+    padding-bottom: 20px;
+  }
+  section.work .my-works .work-text .menu-work ul {
+    justify-content: center;
+  }
+  footer.footer .logo img {
+    width: 12%;
+  }
+  footer.footer .menu-footer {
+    padding: 12px 0;
+  }
+  footer.footer .menu-footer ul {
+    justify-content: space-evenly;
+  }
+  footer.footer .social {
+    padding: 12px 0;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header {
+    padding-top: 0;
+    background-image: url(images/background/background-home-mobile.jpg);
+  }
+  header .logo {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 10px;
+  }
+  header .container {
+    padding: 0 19px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  header .container h1 {
+    font-size: 70px;
+  }
+  header .container p {
+    font-size: 17px;
+  }
+  header .container .pulse {
+    margin-top: 0;
+  }
+  header .container .pulse button {
+    width: 170px;
+    height: 170px;
+  }
+  section.about {
+    background-image: url(images/background/background-destination-mobile.jpg);
+    padding-bottom: 50px;
+  }
+  section.about .about-me {
+    text-align: center;
+  }
+  section.about .about-me .text {
+    top: 15px;
+  }
+  section.about .about-me .text h2 {
+    font-size: 46px;
+  }
+  section.about .about-me .profile {
+    padding: 40px 0;
+  }
+  section.about .about-me .skill {
+    margin-top: 0;
+  }
+  section.about .about-me .skill .subtitle {
+    margin-bottom: 0;
+  }
+  section.about .about-me .skill .tool {
+    padding: 0 20px;
+  }
+  section.about .about-me .skill .tool .container-box {
+    grid-template-columns: auto auto auto;
+  }
+  section.about .about-me .skill .tool .container-box .box-icon img {
+    width: 50px;
+  }
+  section.about .about-me .skill .tool .container-box .box-icon p {
+    text-align: center;
+    font-size: 14px;
+  }
+  section.work {
+    background-image: url(images/background/background-crew-mobile.jpg);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  section.work .my-works .work-img {
+    padding-bottom: 50px;
+  }
+  section.work .my-works .work-text {
+    padding: 0;
+    text-align: center;
+  }
+  section.work .my-works .work-text .menu-work ul {
+    font-size: 13px;
+    justify-content: center;
+  }
+  section.work .my-works .work-text .menu-work ul li {
+    margin: 0 3px;
+  }
+  section.work .my-works .work-text h3 {
+    font-size: 46px;
+  }
+  section.work .my-works .work-text p {
+    font-size: 15px;
+    padding: 0 20px;
+    margin-bottom: 35px;
+  }
+  section.work .my-works .work-text .bttn {
+    padding: 40px 0;
+    display: block;
+  }
+  section.work .my-works .work-text .bttn .tools ul {
+    justify-content: center;
+  }
+  footer.footer .menu-footer ul {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  footer.footer .social ul {
+    padding: 10px 0;
+  }
+}
+/*  MENU  MOBILE */
+@media (max-width: 480px) {
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    transition: 0.2s 0.1s;
+    z-index: 1;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: static;
+  }
+  .enlaces-menu {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
+    flex-direction: column;
+    justify-content: normal;
+    height: 100vh;
+    margin-top: 45px;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-out;
+    font-weight: 100;
+    text-transform: uppercase;
+    background: #0B0D17;
+    width: 60%;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+  }
+  .enlaces-menu li {
+    text-align: left;
+    width: 100%;
+    padding: 0 20px;
+    height: 33px;
+    line-height: 2;
+    margin-bottom: 12px;
+  }
+  .enlaces-menu li:hover {
+    border-bottom: none;
+  }
+  .enlaces-menu li:hover {
+    border-right: 3px solid #FFFFFF;
+  }
+  .enlaces-menu li:active {
+    border-right: 3px solid #FFFFFF;
+  }
+}
+/* ANIMATION */
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.enlaces-menu.activado {
+  display: flex;
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado {
+  transform: rotate(-50deg) translate(-11px, 6px);
+}
+
+.br-2.animado {
+  opacity: 0;
+}
+
+.br-3.animado {
+  transform: rotate(47deg) translate(-7px, -4px);
+}
+
+/*# sourceMappingURL=style.css.map */
